@@ -44,6 +44,74 @@ p {
 
 /*  LAYOUT  estructura general del sitio*/
 /*    COMPONENTS botones tarjetas etc*/
+/* ABSTRACTS (variables mixins)*/
+/*   BASE resets tipografias estilos globales */
+.btn {
+  background-color: #151515;
+  width: 260px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.btn--label {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2.5px;
+  padding: 40px;
+}
+.btn--icon {
+  background-color: #D5966C;
+  width: 56px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover {
+  background-color: #D5966C;
+}
+.btn:hover .btn--icon {
+  background-color: #151515;
+}
+
+.btn--home {
+  background-color: #151515;
+  width: 260px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.btn--home-icon {
+  background-color: #D5966C;
+  width: 56px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn--home-label {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2.5px;
+  padding: 38px;
+}
+.btn--home:hover {
+  background-color: #D5966C;
+}
+.btn--home:hover .btn--home-icon {
+  background-color: #151515;
+}
+
 /*    PAGES   estilos especificos para cada pagina*/
 /*   THEMES    */
 /*  VENDORS    codigo de terceros*//*# sourceMappingURL=style.css.map */

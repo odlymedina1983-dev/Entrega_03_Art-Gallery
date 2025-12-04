@@ -1,0 +1,66 @@
+@use "../abstracts/_variables.scss" as var;
+@use "../base/_typography.scss" as typ;
+.btn{
+    background-color: var.$black;
+    width: 260px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    &--label{
+       font-family: typ.$font-heading;
+       font-size: 22px;
+       font-weight: 300;
+       text-transform: uppercase;
+       color: var.$color;       
+       letter-spacing: 2.5px;
+       padding: 40px; 
+    }
+    &--icon{
+        background-color: var.$orange-ocre;
+        width: 56px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &:hover{
+        background-color: var.$orange-ocre;
+        .btn--icon {
+        background-color: var.$black;
+        }
+    }
+}
+.btn--home{
+    background-color: var.$black;
+    width: 260px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    &-icon{
+        background-color: var.$orange-ocre;
+        width: 56px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-label{
+       font-family: typ.$font-heading;
+       font-size: 22px;
+       font-weight: 300;
+       text-transform: uppercase;
+       color: var.$color;       
+       letter-spacing: 2.5px;
+       padding: 38px;  
+    }
+    &:hover{
+        background-color: var.$orange-ocre;
+        .btn--home-icon {
+        background-color: var.$black;
+        }
+    }
+}
