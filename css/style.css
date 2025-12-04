@@ -43,6 +43,16 @@ p {
 }
 
 /*  LAYOUT  estructura general del sitio*/
+.heroe {
+  max-width: 1275px;
+}
+.heroe--container {
+  background-image: url(../../img/desktop/heroe-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 800px;
+}
+
 /*    COMPONENTS botones tarjetas etc*/
 /* ABSTRACTS (variables mixins)*/
 /*   BASE resets tipografias estilos globales */

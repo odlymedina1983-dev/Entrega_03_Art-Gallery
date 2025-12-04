@@ -1,0 +1,9 @@
+.heroe{
+    max-width: 1275px;
+    &--container{
+        background-image: url(../../img/desktop/heroe-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 800px;
+    }
+}
