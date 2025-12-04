@@ -1,0 +1,49 @@
+$font-heading: "Big Shoulders", sans-serif;
+$font-body: "Outfit", sans-serif;
+
+// XL — Hero title
+h1 {
+  font-family: $font-heading;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 88px;
+}
+
+// L — Section title ("Your day at the gallery")
+h2 {
+  font-family: $font-heading;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 70px;
+}
+
+// M — Mid section heading ("Phasellus ultrices…")
+h3 {
+  font-family: $font-heading;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 50px;
+}
+
+// S — Small heading (último del diseño)
+h4 {
+  font-family: $font-heading;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 36px;
+}
+// Texto general (body)
+p {
+  font-family: $font-body;
+  font-weight: 300; // Outfit Light
+  font-size: 22px;
+  line-height: 32px;
+}
+
+// Texto pequeño (cuando lo necesites)
+.small-text {
+  font-family: $font-body;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}

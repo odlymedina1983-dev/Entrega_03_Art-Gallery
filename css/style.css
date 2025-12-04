@@ -1,5 +1,47 @@
 /* ABSTRACTS (variables mixins)*/
 /*   BASE resets tipografias estilos globales */
+h1 {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 88px;
+}
+
+h2 {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 70px;
+}
+
+h3 {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 50px;
+}
+
+h4 {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.small-text {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
+
 /*  LAYOUT  estructura general del sitio*/
 /*    COMPONENTS botones tarjetas etc*/
 /*    PAGES   estilos especificos para cada pagina*/
