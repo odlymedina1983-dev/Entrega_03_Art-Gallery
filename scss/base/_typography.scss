@@ -47,3 +47,10 @@ p {
   font-size: 18px;
   line-height: 28px;
 }
+body{
+    font-family: $font-body;
+    line-height: 1.5;
+}
+h1,h2,h3,h4{
+    font-family: $font-heading;
+}

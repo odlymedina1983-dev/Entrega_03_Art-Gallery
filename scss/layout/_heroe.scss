@@ -1,9 +1,60 @@
+@use "../abstracts/mixins" as mx;
+@use "../abstracts/variables" as var;
+
 .heroe{
     max-width: 1275px;
-    &--container{
-        background-image: url(../../img/desktop/heroe-desktop.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 800px;
+    margin: 0 auto;
+    &--container{        
+        margin-left: auto;
+        margin-right: auto;
+        //padding-left: 0.5rem;
+        //padding-right: 0.5rem;
+        min-height: 100vh;
+        position: relative;
+        &::before{
+        content:  '';
+        width: 33%;
+        height: 623px;    
+        background-color: var.$black;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        bottom: 0;
+        z-index: -10;               
+        }
+        img{
+            max-width: 33%;
+            position: absolute;
+            left:33%;
+            height: 623px;
+            z-index: -1;
+        }
+        .heroe--title{
+            max-width: 514px;
+            position: absolute;
+            color: var.$color;
+            top: 10%;
+            left: 8%;
+            h1{
+                width: 100%;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &--info{
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        position: absolute;
+        left: 60%;
+        top: 10%;
+        max-width: 350px;
+        max-height: 300px;        
+    }
+     @include mx.tablet {
+    /* Estilos tablet */
+    }
+    @include mx.mobile {
+        /* Estilos mobile */
     }
 }
