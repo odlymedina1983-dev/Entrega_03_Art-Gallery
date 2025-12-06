@@ -42,12 +42,25 @@
 
     <section class="heroe">
       <div class="heroe--container">
-        <img src="img/desktop/heroe-desktop.jpg" alt="heroe-desktop" class="heroe--img">
+          <picture class="heroe__picture">
+            <!-- 1) Mobile primero -->
+            <source srcset="img/mobile/heroe-mobile.jpg" media="(max-width: 375px)">
+            <!-- 2) Luego tablet -->
+            <source srcset="img/tablet/heroe-tablet.jpg" media="(max-width: 768px)">
+            <!-- 3) Por último desktop -->
+            <source srcset="img/desktop/heroe-desktop.jpg" media="(min-width: 769px)">
+            <!-- Fallback por si algo falla -->
+            <img src="img/desktop/heroe-desktop.jpg" alt="heroe-desktop" class="heroe--img">
+          </picture>
         <div class="heroe--title">
-          <h1 >
+          <h1>
             modern<br> 
             art gallery
           </h1>
+          <h2>
+            modern<br> 
+            art gallery
+          </h2>
         </div>
         <div class="heroe--info">
           

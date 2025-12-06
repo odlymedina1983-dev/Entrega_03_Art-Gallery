@@ -7,8 +7,6 @@
     &--container{        
         margin-left: auto;
         margin-right: auto;
-        //padding-left: 0.5rem;
-        //padding-right: 0.5rem;
         min-height: 100vh;
         position: relative;
         &::before{
@@ -22,11 +20,11 @@
         bottom: 0;
         z-index: -10;               
         }
-        img{
-            max-width: 33%;
+        .heroe__picture img{
             position: absolute;
             left:33%;
-            height: 623px;
+            max-height: 623px;
+            object-fit: cover;
             z-index: -1;
         }
         .heroe--title{
@@ -38,6 +36,9 @@
             h1{
                 width: 100%;
                 text-transform: uppercase;
+            }
+            h2{
+                display: none;
             }
         }
     }
@@ -51,10 +52,54 @@
         max-width: 350px;
         max-height: 300px;        
     }
+}
      @include mx.tablet {
     /* Estilos tablet */
+        .heroe{
+            height: 700px;
+            max-width: 768px;
+            &--container{        
+                margin-left: auto;
+                margin-right: auto;                
+                min-height: 100vh;
+                position: relative;
+                &::before{
+                    content: none;                      
+                }
+                .heroe__picture img{
+                    max-height: 700px;
+                    left: 0;
+                    top: 0;
+                }
+            }
+            .heroe--title{
+                position: absolute;
+                color: var.$black;
+                max-width: 339px;
+                top: 15%;
+                left: 50%;
+                h1{
+                    display: none;
+                }
+                h2{
+                    color: var.$black;
+                    display: inline-block;
+                    text-transform: uppercase;
+                }
+            }
+            .heroe--info{
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                max-width: 339px;
+                p{
+                    font-size: 18px;
+                    font-weight: 200;
+                }
+            }
+        }
     }
     @include mx.mobile {
         /* Estilos mobile */
     }
-}
+

@@ -93,11 +93,12 @@ h1, h2, h3, h4 {
   bottom: 0;
   z-index: -10;
 }
-.heroe--container img {
-  max-width: 33%;
+.heroe--container .heroe__picture img {
   position: absolute;
   left: 33%;
-  height: 623px;
+  max-height: 623px;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: -1;
 }
 .heroe--container .heroe--title {
@@ -111,6 +112,9 @@ h1, h2, h3, h4 {
   width: 100%;
   text-transform: uppercase;
 }
+.heroe--container .heroe--title h2 {
+  display: none;
+}
 .heroe--info {
   display: flex;
   gap: 40px;
@@ -121,17 +125,56 @@ h1, h2, h3, h4 {
   max-width: 350px;
   max-height: 300px;
 }
+
 @media (max-width: 768px) {
+  /* Estilos tablet */
   .heroe {
-    /* Estilos tablet */
+    height: 700px;
+    max-width: 768px;
+  }
+  .heroe--container {
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    position: relative;
+  }
+  .heroe--container::before {
+    content: none;
+  }
+  .heroe--container .heroe__picture img {
+    max-height: 700px;
+    left: 0;
+    top: 0;
+  }
+  .heroe .heroe--title {
+    position: absolute;
+    color: #151515;
+    max-width: 339px;
+    top: 15%;
+    left: 50%;
+  }
+  .heroe .heroe--title h1 {
+    display: none;
+  }
+  .heroe .heroe--title h2 {
+    color: #151515;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  .heroe .heroe--info {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    max-width: 339px;
+  }
+  .heroe .heroe--info p {
+    font-size: 18px;
+    font-weight: 200;
   }
 }
 @media (max-width: 375px) {
-  .heroe {
-    /* Estilos mobile */
-  }
+  /* Estilos mobile */
 }
-
 /*    COMPONENTS botones tarjetas etc*/
 .btn {
   background-color: #151515;
