@@ -172,8 +172,29 @@ h1, h2, h3, h4 {
     font-weight: 200;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   /* Estilos mobile */
+  .heroe--container {
+    position: relative;
+    margin: auto;
+    max-width: 430px;
+  }
+  .heroe--container .heroe__picture img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .heroe .heroe--title {
+    position: absolute;
+    top: 32%;
+    left: 5%;
+  }
+  .heroe .heroe--info {
+    position: absolute;
+    top: 52%;
+    left: 5%;
+  }
 }
 /*    COMPONENTS botones tarjetas etc*/
 .btn {
