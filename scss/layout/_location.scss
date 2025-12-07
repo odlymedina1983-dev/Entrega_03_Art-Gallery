@@ -1,0 +1,51 @@
+@use "../abstracts/mixins" as mx;
+@use "../abstracts/variables" as var;
+
+.body-wrapper{
+    margin: 0 auto;
+    max-width: 1275px;
+}
+.location--container{
+    position: relative;    
+    a{
+        position: absolute;
+        top: 0;
+        left: 10%;
+    }
+    .location--text{
+        display: flex;        
+        justify-content: flex-start;
+        padding: 10%;
+        gap: 10%;
+        background-color: var.$black;
+        .location--small-text{
+            max-width: 35%;
+        }
+        h3,h4{           
+           text-transform: uppercase;
+        }
+        h3{
+            color: var.$color; 
+            line-height: 3.5rem;
+        }
+        h4{
+            color: var.$orange-ocre;
+        }
+        p,p.small-text{
+            color: var.$color;
+        }
+    }
+}
+.footer-main{
+    background-color: var.$orange-ocre;    
+}
+
+
+
+@include mx.tablet {
+    /* Estilos tablet */
+}
+
+@include mx.mobile {
+        /* Estilos mobile */
+}
