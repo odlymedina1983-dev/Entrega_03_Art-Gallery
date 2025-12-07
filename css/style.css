@@ -203,6 +203,7 @@ h1, h2, h3, h4 {
 
 .location--container {
   position: relative;
+  background-color: #151515;
 }
 .location--container svg.pointer {
   position: absolute;
@@ -217,10 +218,9 @@ h1, h2, h3, h4 {
 .location--container .location--text {
   display: flex;
   justify-content: flex-start;
-  padding: 10%;
+  padding: 12%;
   gap: 30%;
-  background-color: #151515;
-  padding-right: 5%;
+  padding-right: 12%;
 }
 .location--container .location--text .location--small-text {
   max-width: 41%;
@@ -248,7 +248,7 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: space-between;
   gap: 120px;
-  padding: 10%;
+  padding: 12%;
   padding-block: 5%;
 }
 .footer-main .footer--container h4 {
@@ -263,9 +263,134 @@ h1, h2, h3, h4 {
 
 @media (max-width: 768px) {
   /* Estilos tablet */
+  .location--container svg.pointer {
+    position: absolute;
+    top: 21.5%;
+    left: 46%;
+  }
+  .location--container a {
+    position: absolute;
+    top: 0;
+    left: 5%;
+  }
+  .location--container .location--text {
+    padding: 5%;
+    gap: 10%;
+    padding-right: 0;
+    margin-right: 5%;
+    padding-block: 12%;
+  }
+  .location--container .location--text .location--small-text {
+    max-width: 60%;
+  }
+  .location--container .location--text h3 {
+    color: #fff;
+    line-height: 3.5rem;
+    font-size: 55px;
+  }
+  .footer-main .footer--container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 5%;
+    padding-right: 5%;
+    padding-block: 5%;
+  }
+  .footer-main .footer--container h4 {
+    text-transform: uppercase;
+    min-width: 180px;
+    margin-right: 5%;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .footer-main .footer--container .svg--container {
+    display: flex;
+    gap: 20px;
+  }
+  .footer-main .footer--container p {
+    font-size: 16px;
+    padding: 40px;
+    align-self: left;
+    padding-left: 0;
+  }
 }
 @media (max-width: 430px) {
   /* Estilos mobile */
+  .location--container .location--picture img {
+    min-width: 430px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .location--container svg.pointer {
+    position: absolute;
+    top: 20%;
+    left: 43%;
+  }
+  .location--container a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding-left: 0;
+  }
+  .location--container .location--text {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    gap: 5%;
+    padding-right: 0;
+    margin-right: 0;
+    padding-block: 12%;
+  }
+  .location--container .location--text .location--small-text {
+    max-width: 90%;
+  }
+  .location--container .location--text h3 {
+    color: #fff;
+    line-height: 3.5rem;
+    font-size: 50px;
+    margin-bottom: 10%;
+  }
+  .location--container .location--text p {
+    font-size: 18px;
+    padding: 10px;
+    align-self: left;
+    padding-left: 0;
+    min-height: 80%;
+  }
+  .location--container .location--text .salto {
+    display: none;
+  }
+  .footer-main .footer--container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 5%;
+    padding-right: 5%;
+    padding-block: 15%;
+  }
+  .footer-main .footer--container h4 {
+    text-transform: uppercase;
+    min-width: 180px;
+    margin-right: 5%;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .footer-main .footer--container .svg--container {
+    align-self: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .footer-main .footer--container p {
+    font-size: 16px;
+    padding: 40px;
+    align-self: left;
+    padding-left: 0;
+  }
 }
 /*    COMPONENTS botones tarjetas etc*/
 .btn {
