@@ -4,10 +4,11 @@
 .heroe{
     max-width: 1275px;
     margin: 0 auto;
+    margin-bottom: 180px;
     &--container{        
         margin-left: auto;
         margin-right: auto;
-        min-height: 100vh;
+        min-height: 623px;
         position: relative;
         &::before{
         content:  '';
