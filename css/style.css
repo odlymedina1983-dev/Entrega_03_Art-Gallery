@@ -192,12 +192,12 @@ h1, h2, h3, h4 {
   }
   .heroe .heroe--title {
     position: absolute;
-    top: 32%;
+    top: 35%;
     left: 5%;
   }
   .heroe .heroe--info {
     position: absolute;
-    top: 52%;
+    top: 55%;
     left: 5%;
   }
 }
