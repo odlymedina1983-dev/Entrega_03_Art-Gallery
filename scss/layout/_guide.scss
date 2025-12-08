@@ -7,7 +7,7 @@ section.guide{
         align-items: center;
         justify-content: flex-start;
         gap: 30px;
-        padding: 10%;
+        padding-inline: 10%;
         padding-block: 0;
         margin-bottom: 30px;
         .guide--text-container{
@@ -37,7 +37,10 @@ section.guide{
     section.guide{
         .guide--container{
             padding: 5%;
+            padding-bottom: 0;
             justify-content: space-between;
+            margin-right: 0;
+            margin-bottom: 10px;
             .guide--text-container{
                 max-height: 380px;
                 justify-content: space-between;
@@ -45,7 +48,7 @@ section.guide{
                 gap: 20px;
                 margin-left: 30px;
                 .h2{
-                    font-size: 50px;
+                    font-size: 40px;
                     margin-bottom: 0;
                     max-width: 230px;
                     line-height: 55;
@@ -56,8 +59,8 @@ section.guide{
                 }
             }
         }
-        .guide--img img{
-            min-height: 400px;
+        .guide--img img{            
+            min-width: 398px;      
         }
     }
 }
@@ -69,7 +72,7 @@ section.guide{
             flex-direction: column-reverse;
             justify-content: flex-start;
             align-items: flex-start;
-            margin-right: 5%;
+            margin-right: 0;
             .guide--text-container{
                 margin-left: 0;
                 justify-content: flex-start;

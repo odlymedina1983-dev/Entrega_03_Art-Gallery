@@ -206,7 +206,7 @@ section.guide .guide--container {
   align-items: center;
   justify-content: flex-start;
   gap: 30px;
-  padding: 10%;
+  padding-inline: 10%;
   padding-block: 0;
   margin-bottom: 30px;
 }
@@ -235,7 +235,10 @@ section.guide .guide--img img {
   /* Estilos tablet */
   section.guide .guide--container {
     padding: 5%;
+    padding-bottom: 0;
     justify-content: space-between;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
   section.guide .guide--container .guide--text-container {
     max-height: 380px;
@@ -245,7 +248,7 @@ section.guide .guide--img img {
     margin-left: 30px;
   }
   section.guide .guide--container .guide--text-container .h2 {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 0;
     max-width: 230px;
     line-height: 55;
@@ -255,7 +258,7 @@ section.guide .guide--img img {
     line-height: 28px;
   }
   section.guide .guide--img img {
-    min-height: 400px;
+    min-width: 398px;
   }
 }
 @media (max-width: 430px) {
@@ -264,7 +267,7 @@ section.guide .guide--img img {
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-right: 5%;
+    margin-right: 0;
   }
   section.guide .guide--container .guide--text-container {
     margin-left: 0;
@@ -472,6 +475,113 @@ section.guide .guide--img img {
     padding: 40px;
     align-self: left;
     padding-left: 0;
+  }
+}
+section.marketing .marketing--container {
+  display: flex;
+  max-height: 720x;
+  gap: 30px;
+  padding: 0;
+  padding-block: 0;
+  margin-bottom: 180px;
+}
+section.marketing .marketing--container picture.marketing--heroe-picture img {
+  min-width: 635px;
+  height: 720px;
+}
+section.marketing .marketing--container .marketing--card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 720px;
+}
+section.marketing .marketing--container .marketing--card-container .marketing--card-info {
+  background-color: #151515;
+  color: #fff;
+  padding: 40px;
+  height: 100%;
+}
+section.marketing .marketing--container .marketing--card-container .marketing--card-info h2 {
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+section.marketing .marketing--container .marketing--card-container .marketing--card-info p {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  /* Estilos tablet */
+  section.marketing .marketing--container {
+    max-height: 720x;
+    gap: 10px;
+    margin-bottom: 120px;
+    padding-right: 5%;
+  }
+  section.marketing .marketing--container picture.marketing--heroe-picture img {
+    min-width: 0;
+    max-width: 380px;
+  }
+  section.marketing .marketing--container .marketing--card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  section.marketing .marketing--container .marketing--card-container .marketing--card-info {
+    background-color: #151515;
+    color: #fff;
+    padding: 20px;
+    height: 100%;
+  }
+  section.marketing .marketing--container .marketing--card-container .marketing--card-info h2 {
+    margin-top: 50px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+  section.marketing .marketing--container .marketing--card-container .marketing--card-info p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 430px) {
+  /* Estilos mobile */
+  section.marketing {
+    margin-inline: 0;
+    margin-block: 0 auto;
+    padding: 5%;
+  }
+  section.marketing .marketing--container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-right: 0;
+    margin-bottom: 16px;
+  }
+  section.marketing .marketing--container picture.marketing--heroe-picture img {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  section.marketing .marketing--container .marketing--card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  section.marketing .marketing--container .marketing--card-container .marketing--card-info {
+    background-color: #151515;
+    color: #fff;
+    padding: 20px;
+    height: 350px;
+  }
+  section.marketing .marketing--container .marketing--card-container .marketing--card-info h2 {
+    margin-top: 30px;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+  section.marketing .marketing--container .marketing--card-container .marketing--card-info p {
+    font-size: 18px;
   }
 }
 /*    COMPONENTS botones tarjetas etc*/

@@ -1,0 +1,113 @@
+@use "../abstracts/mixins" as mx;
+@use "../abstracts/variables" as var;
+
+section.marketing{
+    .marketing--container{
+        display: flex;
+        max-height: 720x;
+        gap: 30px;
+        padding: 0;
+        padding-block: 0;
+        margin-bottom: 180px;
+        picture.marketing--heroe-picture img{
+            min-width: 635px;
+            height: 720px;
+        }
+        .marketing--card-container{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            height: 720px;
+            .marketing--card-info{
+                background-color: var.$black;
+                color: var.$color;
+                padding: 40px;
+                height: 100%;
+                h2{
+                    font-size: 60px;
+                    line-height: 60px;
+                    margin-bottom: 40px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }            
+        }
+    }
+}
+@include mx.tablet {
+    /* Estilos tablet */
+    section.marketing{
+        .marketing--container{
+            max-height: 720x;
+            gap: 10px;            
+            margin-bottom: 120px;
+            padding-right: 5%;
+            picture.marketing--heroe-picture img{
+                min-width: 0;
+                max-width: 380px;
+            }
+            .marketing--card-container{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;                
+                .marketing--card-info{
+                    background-color: var.$black;
+                    color: var.$color;
+                    padding: 20px;
+                    height: 100%;
+                    h2{
+                        margin-top: 50px;
+                        font-size: 40px;
+                        line-height: 40px;
+                        margin-bottom: 40px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }            
+            }
+        }
+    }    
+}
+@include mx.mobile {
+    /* Estilos mobile */
+section.marketing{
+        margin-inline: 0;
+        margin-block: 0 auto;
+        padding: 5%;        
+        .marketing--container{
+            display: flex;
+            flex-direction: column;            
+            gap: 16px;            
+            padding-right: 0;
+            margin-bottom: 16px;            
+            picture.marketing--heroe-picture img{
+                width: 100%;                
+                display: block; 
+                margin: 0;
+                padding: 0;                              
+            }
+            .marketing--card-container{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;                                
+                .marketing--card-info{
+                    background-color: var.$black;
+                    color: var.$color;
+                    padding: 20px;
+                    height: 350px;
+                    h2{
+                        margin-top: 30px;
+                        font-size: 50px;
+                        line-height: 50px;
+                        margin-bottom: 40px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }            
+            }
+        }
+    }  
+}
