@@ -11,13 +11,13 @@ section.marketing{
         margin-bottom: 180px;
         picture.marketing--heroe-picture img{
             min-width: 635px;
-            height: 720px;
+            height: 760px;
         }
         .marketing--card-container{
             display: flex;
             flex-direction: column;
             gap: 30px;
-            height: 720px;
+            height: 760px;
             .marketing--card-info{
                 background-color: var.$black;
                 color: var.$color;
@@ -27,9 +27,11 @@ section.marketing{
                     font-size: 60px;
                     line-height: 60px;
                     margin-bottom: 40px;
+                    max-width: 250px;
                 }
                 p{
                     font-size: 18px;
+                    max-width: 250px;
                 }
             }            
         }
@@ -91,7 +93,8 @@ section.marketing{
             .marketing--card-container{
                 display: flex;
                 flex-direction: column;
-                gap: 10px;                                
+                gap: 10px;
+                height: auto !important;                                
                 .marketing--card-info{
                     background-color: var.$black;
                     color: var.$color;
