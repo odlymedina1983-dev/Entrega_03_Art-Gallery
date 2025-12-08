@@ -59,6 +59,7 @@
         .heroe{
             height: 700px;
             max-width: 768px;
+            margin-bottom: 80px;
             &--container{        
                 margin-left: auto;
                 margin-right: auto;                
@@ -90,7 +91,7 @@
             }
             .heroe--info{
                 position: absolute;
-                top: 45%;
+                top: 40%;
                 left: 50%;
                 max-width: 339px;
                 p{
@@ -103,6 +104,7 @@
     @include mx.mobile {
         /* Estilos mobile */
         .heroe{
+            margin-bottom: 120px;
             &--container{
                 position: relative;
                 margin: auto;

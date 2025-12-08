@@ -34,5 +34,54 @@ section.guide{
 }
 @include mx.tablet {
     /* Estilos tablet */
-    
+    section.guide{
+        .guide--container{
+            padding: 5%;
+            justify-content: space-between;
+            .guide--text-container{
+                max-height: 380px;
+                justify-content: space-between;
+                max-width: 34%;
+                gap: 20px;
+                margin-left: 30px;
+                .h2{
+                    font-size: 50px;
+                    margin-bottom: 0;
+                    max-width: 230px;
+                    line-height: 55;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+        }
+        .guide--img img{
+            min-height: 400px;
+        }
+    }
+}
+
+@include mx.mobile {
+    /* Estilos mobile */
+    section.guide{
+        .guide--container{
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-right: 5%;
+            .guide--text-container{
+                margin-left: 0;
+                justify-content: flex-start;
+
+                h2{
+                    min-width: 343px;
+                    max-width: none;
+                }
+                p{
+                    min-width: 340px;
+                }
+            }
+        }
+    }
 }

@@ -132,6 +132,7 @@ h1, h2, h3, h4 {
   .heroe {
     height: 700px;
     max-width: 768px;
+    margin-bottom: 80px;
   }
   .heroe--container {
     margin-left: auto;
@@ -164,7 +165,7 @@ h1, h2, h3, h4 {
   }
   .heroe .heroe--info {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     max-width: 339px;
   }
@@ -175,6 +176,9 @@ h1, h2, h3, h4 {
 }
 @media (max-width: 430px) {
   /* Estilos mobile */
+  .heroe {
+    margin-bottom: 120px;
+  }
   .heroe--container {
     position: relative;
     margin: auto;
@@ -229,6 +233,50 @@ section.guide .guide--img img {
 
 @media (max-width: 768px) {
   /* Estilos tablet */
+  section.guide .guide--container {
+    padding: 5%;
+    justify-content: space-between;
+  }
+  section.guide .guide--container .guide--text-container {
+    max-height: 380px;
+    justify-content: space-between;
+    max-width: 34%;
+    gap: 20px;
+    margin-left: 30px;
+  }
+  section.guide .guide--container .guide--text-container .h2 {
+    font-size: 50px;
+    margin-bottom: 0;
+    max-width: 230px;
+    line-height: 55;
+  }
+  section.guide .guide--container .guide--text-container p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  section.guide .guide--img img {
+    min-height: 400px;
+  }
+}
+@media (max-width: 430px) {
+  /* Estilos mobile */
+  section.guide .guide--container {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 5%;
+  }
+  section.guide .guide--container .guide--text-container {
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+  section.guide .guide--container .guide--text-container h2 {
+    min-width: 343px;
+    max-width: none;
+  }
+  section.guide .guide--container .guide--text-container p {
+    min-width: 340px;
+  }
 }
 .body-wrapper {
   margin: 0 auto;
