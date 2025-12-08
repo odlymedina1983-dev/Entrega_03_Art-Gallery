@@ -422,6 +422,16 @@ section.guide .guide--img img {
   gap: 30px;
 }
 
+.footer--black {
+  background-color: #151515;
+}
+.footer--black .footer--container h4 {
+  color: #fff;
+}
+.footer--black .footer--container p {
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   /* Estilos tablet */
   .footer-main .footer--container {

@@ -21,6 +21,17 @@
         }
     }   
 }
+.footer--black{
+    background-color: var.$black;
+    .footer--container{
+        h4{
+            color: var.$color;
+        }
+        p{
+            color: var.$color;
+        }
+    }
+}
 @include mx.tablet {
     /* Estilos tablet */
 
